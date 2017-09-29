@@ -1,0 +1,11 @@
+version: "3"
+services:
+    pymachine:
+        build:
+            context: .
+            dockerfile: ./Dockerfile
+        image: pymachine
+        # volumes:
+            # - .:/app
+            # - ~/Fiisoft/practice-tensorflow/output2:/app/output
+            # - ~/output:/app/output
