@@ -4,7 +4,7 @@ a = tf.placeholder(tf.float32)
 b = tf.placeholder(tf.float32)
 adder_node = a + b
 
-sess = tf.Session()
+sess = tf.Session(config=tf.ConfigProto(log_device_placement=True))
 print(sess.run(adder_node, {a: 3, b:4}))
 
 add_and_double = adder_node*2
